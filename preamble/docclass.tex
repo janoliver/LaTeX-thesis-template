@@ -1,0 +1,64 @@
+% I use scrbook as document class for the following reasons:
+% I find that KOMA script in general is a more advanced and flexible
+% approach for latex documents than the traditional doc classes. It has way
+% more options to format the document and I will thus always use KOMA
+% script. The book class is used because I use chapters and might want to
+% have empty pages before the beginning of a chapter. This is possible with
+% the other classes but default with the scrbook one.
+%
+% The options are set separately and commented below.
+\documentclass{scrbook}
+
+% I use Din A5 as the document format. 
+\KOMAoptions{paper = a5}
+
+% The font size will be 12pt.   
+\KOMAoptions{fontsize = 10pt}
+
+% Since the output will be a book, I set the twoside option to true.
+\KOMAoptions{twoside = true}
+
+% titlepage as separated page
+\KOMAoptions{titlepage = true}
+
+% write size of file to output. useful for different output formats
+\KOMAoptions{pagesize}
+
+% The BCOR value is important for the binding of the book. It corrects the
+% margin on the inner edge of the page that can not be seen after the book
+% was glued together.
+\KOMAoptions{BCOR = 0mm}
+
+% I want the bibliography page to appear in the table of contents. Note
+% that this entry is not numbered. Change this to bibliographynumbered to
+% get it numbered.
+\KOMAoptions{toc = bibliography}
+
+% I want the table of contents to be indented the default way. If you have
+% a very depply nested document structure, change this value according to
+% the KOMA script documentation.
+\KOMAoptions{toc = graduated}
+
+% make tables of figures and tables appear in the table of contents
+\KOMAoptions{toc = listof}
+
+% No dot after heading numbers.
+\KOMAoptions{numbers = noenddot}
+
+% begin new chapters always on the right side
+\KOMAoptions{open = right}
+
+% Draft?
+\KOMAoptions{draft = false}
+
+% Normal sized headings
+\KOMAoptions{headings = normal}
+
+% Do not prefix chapter headings with the word "chapter"
+\KOMAoptions{chapterprefix = false}
+
+% same for appendix
+\KOMAoptions{appendixprefix = true}
+
+% calculate the DIV
+\KOMAoptions{DIV = calc}

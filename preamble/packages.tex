@@ -1,0 +1,47 @@
+% I want to use UTF8 always
+\usepackage[utf8]{inputenc}
+
+% use a better font encoding. 7 bit are NOT enough!
+\usepackage[T1]{fontenc}
+
+% use the latin modern fonts, for they support T1 better
+%\usepackage{lmodern}
+%\usepackage[utopia]{mathdesign}
+\usepackage{palatino}
+\usepackage{eulervm}
+%\usepackage{mathpple}
+
+% the language of the thesis
+\usepackage[english]{babel}
+
+% These two packages are needed for math and math symbols, which I use
+% heavily in the document.
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+
+% This package lets me use \includegraphics for figures.
+\usepackage{graphicx}
+
+% siunitx is great for typesetting units like a = 5mm. I try to use it
+% whenever any unit is used. 
+\usepackage{siunitx}
+
+% Make the table of contents be linked to the content position.
+\usepackage{hyperref}
+
+% References with biber. 
+\usepackage[
+    backend = biber,
+    style = numeric-comp,
+    sortlocale = en_US,
+    natbib = true,
+    url = false, 
+    doi = true,
+    eprint = false
+]{biblatex}
+
+% this if for blind texts only!
+\usepackage{blindtext}
+
+% we want colors. Sometimes, at least!
+\usepackage[usenames,dvipsnames]{xcolor}

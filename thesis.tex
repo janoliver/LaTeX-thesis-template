@@ -1,0 +1,24 @@
+
+\input{preamble/docclass.tex}
+\input{preamble/packages.tex}
+\input{preamble/commands.tex}
+\input{preamble/settings.tex}
+
+\begin{document}
+    
+    \frontmatter
+        \input{pages/frontpage.tex}
+        \input{pages/acknowledgement.tex}
+        \input{pages/tableofcontents.tex}
+    
+    \mainmatter
+        \input{content/introduction.tex}
+        \input{content/somecontent.tex}
+        \input{content/elements.tex}
+        
+    %\backmatter
+        \appendix
+        \input{pages/bibliography.tex}
+        \input{pages/appendix.tex}
+        
+\end{document}
