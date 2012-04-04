@@ -60,5 +60,47 @@ Now to the file and folder structure:
     bibliography.bib
         The file with all the references defined. 
 
+  content/
+    Here comes all the content (text and figures, mainly)
+
+    figures/
+        All figures should go in this folder
+
+    contentfile1.tex, contentfile2.tex, ...
+        The actual content is in these. Name those wisely, and try not to
+        use chapter numbers or so in the file names, since this makes
+        reordering them a hassle.
+
+  pages/
+    Pages that can not really be described as content go here, like the
+    frontpage, appendix, table of contents, etc.
+
+    appendix.tex
+        The appendix of the thesis
+
+    bibliography.tex
+        The references page.
+
+    frontpage.tex
+        The front (title) page of the thesis. Note that in this template I
+        use some kind of simple place holder.
+
+    tableofcontents.tex
+        The table of contents page. 
+
+  thesis.tex
+    The main tex file. It glues together all the external files and should
+    be compiled (latexmk takes care of that!)
+
+  .latexmkrc
+    The latexmk configuration file.
+
+  .gitignore
+    The stuff that should be ignored by git.
+
+  README
+    this file
+    
+
 I hope you find this template useful. Feel free to fork it and change it
 for your purposes.
