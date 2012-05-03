@@ -4,13 +4,6 @@
 % use a better font encoding. 7 bit are NOT enough!
 \usepackage[T1]{fontenc}
 
-% I use palatino font with the Euler math font/
-%\usepackage{palatino}
-\renewcommand{\rmdefault}{pplx}
-%\usepackage[scaled]{helvet} % ss
-%\usepackage{courier} % tt
-\usepackage{eulervm}
-
 % the language of the thesis (babel recommends loading csquotes)
 \usepackage{csquotes} 
 \usepackage[english]{babel}
@@ -20,15 +13,32 @@
 \usepackage[fleqn]{amsmath}
 \usepackage{amssymb}
 
-% This package lets me use \includegraphics for figures.
-\usepackage{graphicx}
-
 % siunitx is great for typesetting units like a = 5mm. I try to use it
 % whenever any unit is used. 
 \usepackage{siunitx}
 
+% linux libertine
+\usepackage{libertine}
+
+% This package lets me use \includegraphics for figures.
+\usepackage{graphicx}
+
+% we want colors. Sometimes, at least!
+\usepackage[usenames,dvipsnames]{xcolor}
+
 % Make the table of contents be linked to the content position.
 \usepackage{hyperref}
+\definecolor{darkblue}{rgb}{0,0,.5}
+\hypersetup{
+    pdftex=true, 
+    colorlinks=true, 
+    breaklinks=true, 
+    linkcolor=darkblue, 
+    menucolor=darkblue, 
+    pagecolor=darkblue, 
+    urlcolor=darkblue,
+    citecolor = darkblue
+}
 
 % References with biber. 
 \usepackage[
@@ -41,11 +51,5 @@
     eprint = false
 ]{biblatex}
 
-% we want colors. Sometimes, at least!
-\usepackage[usenames,dvipsnames]{xcolor}
-
 % fix latex2e bugs
 \usepackage{fixltx2e}
-
-% nice units
-\usepackage{siunitx}

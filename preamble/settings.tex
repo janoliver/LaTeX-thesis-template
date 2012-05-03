@@ -1,28 +1,22 @@
 % Path to the bibliography files
 \addbibresource{bibliography/bibliography.bib}
 
-% This command typesets the chapter headings. The chapter number is very big 
-% on the left while the title is aligned with the right side of the page.
-\definecolor{lightgray}{gray}{.85}
+% These commands change the chapter heading style a bit. 
+\addtokomafont{chapter}{\raggedleft\Huge}
 \renewcommand*{\chapterformat}{%
-  \colorbox{White}{\fontsize{80}{88}\selectfont\color{lightgray}\thechapter\autodot}}
-\addtokomafont{chapter}{%
-  \renewcommand*{\raggedsection}{\raggedleft\rightskip 0em\hfill}}
+\vspace{1cm}\Large\chapappifchapterprefix{\nobreakspace}\thechapter
+\autodot}
 
-% Reformat the captions a littl bit, so that they are left aligned, indented
-% by 1em and that the descriptor (Figure X) is written in smallcaps. 
+% Reformat the captions a littl bit, so that they are left aligned, and
+% indented by 1em
 \setkomafont{captionlabel}{\bfseries}
 \renewcommand*{\captionformat}{~~}
 \setcapindent{1em}
 \setcapwidth[l]{\textwidth}
 \setcapmargin[0em]{1em}
 
-% adjust the line spread. This is the recommended spread for the font
-% "palatino", that I use. 
+% adjust the line spread. This might change for different fonts
 \linespread{1.05}
 
 % small head
 \addtokomafont{pagehead}{\small}
-%\setkomafont{pageheadfoot}{%
-%   \normalfont\normalcolor\small
-%}

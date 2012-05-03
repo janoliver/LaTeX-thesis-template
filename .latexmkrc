@@ -6,4 +6,3 @@
 # we use latex, not pdflatex, since postscript is a more open format and we
 # want everything to be truly open source.
 $pdf_mode = 1;
-
