@@ -7,7 +7,7 @@
 \vspace{1cm}\Large\chapappifchapterprefix{\nobreakspace}\thechapter
 \autodot}
 
-% Reformat the captions a littl bit, so that they are left aligned, and
+% Reformat the captions a little bit, so that they are left aligned, and
 % indented by 1em
 \setkomafont{captionlabel}{\bfseries}
 \renewcommand*{\captionformat}{~~}
@@ -19,4 +19,7 @@
 \linespread{1.05}
 
 % small head
+\addtokomafont{pagehead}{\normalfont}
 \addtokomafont{pagehead}{\small}
+\renewcommand*{\chaptermarkformat}{%
+\textit{\chapapp~\thechapter:}\enskip}
