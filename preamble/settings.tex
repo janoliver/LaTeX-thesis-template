@@ -1,5 +1,6 @@
 % Path to the bibliography files
 \addbibresource{bibliography/bibliography.bib}
+\addbibresource{bibliography/online.bib}
 
 % These commands change the chapter heading style a bit. 
 \addtokomafont{chapter}{\raggedleft\Huge}
@@ -7,7 +8,7 @@
 \vspace{1cm}\Large\chapappifchapterprefix{\nobreakspace}\thechapter
 \autodot}
 
-% Reformat the captions a little bit, so that they are left aligned, and
+% Reformat the captions a littl bit, so that they are left aligned, and
 % indented by 1em
 \setkomafont{captionlabel}{\bfseries}
 \renewcommand*{\captionformat}{~~}
@@ -23,3 +24,15 @@
 \addtokomafont{pagehead}{\small}
 \renewcommand*{\chaptermarkformat}{%
 \textit{\chapapp~\thechapter:}\enskip}
+
+% margin in toc
+\BeforeStartingTOC{\linespread{0.80}}
+
+% hyphenation helper
+\hyphenation{
+  Mil-ler-Abra-hams
+  Ab-ra-hams
+  strong-ly
+  dee-per
+  Ar-khi-pov
+}

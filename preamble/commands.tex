@@ -1,3 +1,6 @@
+% These are the actual shortcuts I used in my thesis. They might give 
+% you an idea on how to define your own. I highly recommend not to repeate 
+% yourself but rather write makros for stuff you often use!
 
 % The default exponential function sucks a bit, so let's define our own
 % ones.
@@ -5,4 +8,23 @@
 \newcommand{\eeexp}[1]{\exp\!\left[#1\right]}
 \newcommand{\eeeexp}[1]{\exp\!\left\{#1\right\}}
 
-% more to come ...
+% shortcuts
+\newcommand{\ei}[0]{\varepsilon_\infty}
+\newcommand{\ef}[0]{\varepsilon_F}
+\newcommand{\et}[0]{\varepsilon_t}
+\newcommand{\enot}[0]{\varepsilon_0}
+\newcommand{\ve}[0]{\varepsilon}
+
+\newcommand{\placeholder}[0]{
+        \framebox[\textwidth]{
+                \rule{0pt}{5cm}
+        }
+}
+
+\newcommand{\avg}[1]{\langle #1 \rangle}
+
+\newcommand{\blankpage}[0]{
+        \newpage
+        \thispagestyle{empty}
+        \mbox{}
+}

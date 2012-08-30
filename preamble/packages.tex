@@ -1,9 +1,6 @@
 % I want to use UTF8 always
 \usepackage[utf8]{inputenc}
 
-% use a better font encoding. 7 bit are NOT enough!
-\usepackage[T1]{fontenc}
-
 % the language of the thesis (babel recommends loading csquotes)
 \usepackage{csquotes} 
 \usepackage[english]{babel}
@@ -17,52 +14,65 @@
 % whenever any unit is used. 
 \usepackage{siunitx}
 
-% linux libertine
-\usepackage{libertine}
-%\usepackage{fontspec}
-%\usepackage{unicode-math}
-%\setsansfont{Linux Biolinum O}
-%\setmainfont{Linux Libertine O}
-%\setmathfont{Latin Modern Math}
-% use Libertine for the letters
-%\setmathfont[range=\mathit/{latin,Latin,num,Greek,greek}]{Linux Libertine O Italic}
-%\setmathfont[range=\mathup/{latin,Latin,num,Greek,greek}]{Linux Libertine O}
-%\setmathfont[range=\mathbfup/{latin,Latin,num,Greek,greek}]{Linux Libertine O Bold}
-%\setmathfont[range={"2202}]{Linux Libertine O}% "02202 = \partial % doesn't work
-%\setmathfont[range={"221E}]{Linux Libertine O}% "0221E = \infty
-% etc. (list should be completed depending on needs)
+% fonts. Pallatino, basically.
+\usepackage[sc]{mathpazo}
+\usepackage[scaled=0.86]{berasans}
+\usepackage[scaled=1.03]{inconsolata}
+\usepackage{tgpagella}
 
+% use a better font encoding. 7 bit are NOT enough!
+\usepackage[T1]{fontenc}
 
 % This package lets me use \includegraphics for figures.
 \usepackage{graphicx}
 
-% we want colors. Sometimes, at least!
-\usepackage[usenames,dvipsnames]{xcolor}
+% nicer tables
+\usepackage{booktabs}
+
+% tikz graphics
+\usepackage{tikz}
 
 % Make the table of contents be linked to the content position.
 \usepackage{hyperref}
 \definecolor{darkblue}{rgb}{0,0,0}
 \hypersetup{
-    pdftex = true, 
-    colorlinks = true, 
-    breaklinks = true, 
-    linkcolor = darkblue, 
-    menucolor = darkblue, 
-    pagecolor = darkblue, 
-    urlcolor = darkblue,
+%    pdftex=true, 
+    colorlinks=true, 
+    breaklinks=true, 
+    linkcolor=darkblue, 
+    menucolor=darkblue, 
+%    pagecolor=darkblue, 
+    urlcolor=darkblue,
     citecolor = darkblue
 }
 
 % References with biber. 
 \usepackage[
     backend = biber,
-    style = numeric-comp,
+    firstinits = true,
+    %style = phys, % the phys style must be installed separately
     sortlocale = en_US,
     natbib = true,
-    url = false, 
-    doi = true,
-    eprint = false
+    doi = false,
+    eprint = false,
+    sorting=none
 ]{biblatex}
+
+% clever references
+\usepackage[noabbrev, capitalise]{cleveref}
 
 % fix latex2e bugs
 \usepackage{fixltx2e}
+
+% line numbers
+\usepackage[modulo,switch]{lineno}
+\linenumbers
+
+% how is our text width?
+\usepackage{printlen}
+
+% include pdf documents
+\usepackage{pdfpages}
+
+% chemical formulas
+\usepackage[version=3]{mhchem}
