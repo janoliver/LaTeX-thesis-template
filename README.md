@@ -33,7 +33,6 @@ Now to the file and folder structure:
   Everything that makes the preamble
   goes into the folder named "preamble". You will find the following
   files there: 
-
     * __docclass.tex__
       This file contains the document class and all of it's options. Some
       basic packages are also included here, like the content encoding
@@ -62,14 +61,12 @@ Now to the file and folder structure:
 * __bibliography/__
   This folder contains the bib file and additional non-tex files that are
   needed for the bibliography. A custom bib style would go here as well.
-
     * __bibliography.bib__
       The file with all the references defined. 
 
 * __sources/__
   In this folder, I gathered all the sources (plotting scripts, svg files)
   for figures and so on. It contains two files:
-
     * __plots/__
     A folder where all my plots go into
 
@@ -85,7 +82,6 @@ Now to the file and folder structure:
         
 * __content/__
   Here comes all the content (text and figures, mainly)
-
     * __figures/__
       All figures should go in this folder. 
 
@@ -96,7 +92,6 @@ Now to the file and folder structure:
 * __pages/__
   Pages that can not really be described as content go here, like the
   frontpage, appendix, table of contents, etc.
-
     *  __appendix.tex__
        The appendix of the thesis
 
